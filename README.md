@@ -1,1 +1,2 @@
-Simulations of some QKD protocols using qiskit.
+There will be programs that simulate the quantum key distribution protocols.
+QISKit is requiered to run.
