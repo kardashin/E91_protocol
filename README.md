@@ -1,4 +1,4 @@
-There will be programs that simulate the quantum key distribution protocols.
+There will be programs that simulate some common quantum distribution protocols.
 
 QISKit is requiered to run.
 
