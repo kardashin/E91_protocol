@@ -13,7 +13,6 @@ Number of mismatching bits is 84
 
 measuremensChoicesLength = 5000
 evePresence = False
-evePresencePercentage = 0.3
 
 CHSH correlation value is 2.928
 Difference from the ideal case is 0.1
@@ -24,7 +23,6 @@ Number of mismatching bits is 0
 
 measuremensChoicesLength = 200
 evePresence = False
-evePresencePercentage = 0.3
 
 CHSH correlation value is 1.763
 Difference from the ideal case is 1.065
