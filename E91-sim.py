@@ -36,7 +36,7 @@ print(Q_program.get_backend_status('ibmqx4'))
 #ibmqx4_coupling = Q_program.get_backend_configuration('ibmqx4')['coupling_map']
 
 #backend = 'local_qasm_simulator' # simulator
-#backend = 'ibmqx4' # real device
+#backend = 'ibmqx2' # real device
 backend = 'ibmqx4' # real device  coupling_map=ibmqx4_coupling,
 
 ## Creating a shared entangled state
@@ -146,7 +146,7 @@ eveMeasurements = [ident0, ident1, measureA1, measureA2, measureA3, measureB1, m
 circuits = [] # prepared circuits
 
 for k in range(measuremensChoicesLength):
-    # create the name of the k-th circuit depending on Alice's and Bob's choices of measurement
+    # create the name of the k-th circuit depending on Alice's, Bob's and Eve's choices of measurement
     circuitName = str(k) + '-A' + str(aliceMeasurementsChoices[k]+1) + 'B' + str(bobMeasurementsChoices[k]+1) + 'E' + str(eveMeasurementsChoices[k][0]) + str(eveMeasurementsChoices[k][1])
     # create the joint measurement circuit
     Q_program.add_circuit(circuitName, entangledState + eveMeasurements[eveMeasurementsChoices[k][0]] + eveMeasurements[eveMeasurementsChoices[k][1]] + aliceMeasurements[aliceMeasurementsChoices[k]] + bobMeasurements[bobMeasurementsChoices[k]]) 
@@ -161,7 +161,6 @@ simulate = Q_program.execute(circuits, backend='local_qasm_simulator', shots=1, 
 
 # After measurement in A2B1 and A3B2 basis the posterior state must be |00> or |11>. This is an ideal case.
 # This block counts how many |01> and |10> states obtained after A2B1 and A3B2 measurements.
-# Actual for running on a real device and with Eve's presence.
 
 countsDataFrame = []
 for circ in circuits:
