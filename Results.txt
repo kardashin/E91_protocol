@@ -1,3 +1,4 @@
+#################################
 ### Simulation. Eve is active ###
 
 measuremensChoicesLength = 5000
@@ -9,6 +10,7 @@ Difference from the ideal case is 0.695
 Length of the sifted key is 1095
 Number of mismatching bits is 84
 
+###################################
 ### Simulation. Eve is inactive ###
 
 measuremensChoicesLength = 5000
@@ -19,6 +21,7 @@ Difference from the ideal case is 0.1
 Length of the sifted key is 1112
 Number of mismatching bits is 0
 
+######################################
 ### Run on ibmqx4. Eve is inactive ###
 
 measuremensChoicesLength = 200
