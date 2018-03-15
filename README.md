@@ -1,3 +1,3 @@
-There is a program that simulates E91 quantum key distribution protocol.
+A program that simulates the E91 quantum key distribution protocol.
 
 QISKit is requiered to run.
