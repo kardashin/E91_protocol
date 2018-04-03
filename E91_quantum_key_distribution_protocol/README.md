@@ -4,4 +4,4 @@ It is devoted to the E91 quantum key distribution protocol developed by Artur Ek
 GitHub fails to display correctly some LaTeX in Jupyter Notebooks. 
 The correctly displayed notebook can be seen [here](http://nbviewer.jupyter.org/github/kardashin/QKDprotocols/blob/master/E91_quantum_key_distribution_protocol/e91_quantum_key_distribution_protocol.ipynb)
 
-The GitHub-friendly (more or less) version *e91_github-friendly.ipynb* is also availabe.
+The [GitHub-friendly](https://github.com/kardashin/QKDprotocols/blob/master/E91_quantum_key_distribution_protocol/E91_github-friendly.ipynb) (more or less) version is also availabe.
